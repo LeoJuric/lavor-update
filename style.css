@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
+
 
 
 
@@ -23,11 +23,14 @@ main {
     width: 100%;
 }
 
+#containslike {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/prvii.jpg);
+    background-size: cover;
+}
+
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/sahara.svg);
     display: flex;
     flex-direction: column;
-    background-color: #131111;
     color: white;
 }
 
@@ -81,19 +84,16 @@ header {
             padding: 15px;
             color: #d4af37;
             transition: 0.3s;
-            border: 1px solid #d4af37;
-            background-color: #272727;
         }
 
 #completlogo {
     display: flex;
     flex-direction: column;
-    
+    margin-left: -270px;
 }
 
     #completlogo img {
-        margin-top: -20px;
-        width: 100%;
+        width: 500px;
     }
 
     .logogoldgore {
@@ -115,26 +115,29 @@ header {
 #goreshow {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0px 20px 0px;
+    align-items: center;
 }
 
+    #lievi {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -230px;
+    }
+
     #goreshow li {
-        border-bottom: 3px solid #d4af37;
         padding: 10px;
-        margin-top: 60px;
+        color: white;
+        margin: 0px 10px;
     }
 
         #goreshow li:hover {
             color: #d4af37;
             transition: 0.3s;
-            border: 1px solid #d4af37;
-            background-color: #272727;
         }
 
 #prvi {
     color: white;
-    padding-bottom: 20%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/prvi.png);
+    padding-bottom: 50px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -150,7 +153,6 @@ header {
 #btn1 {
     display: flex;
     margin: auto;
-    border: 1px solid white;
     background-color: #272727;
     color: white;
     width: 125px;
@@ -162,8 +164,7 @@ header {
 
     #btn1:hover {
         width: 135px;
-        padding: 27px 0px 27px 0px;
-        border: 1px solid #d4af37;
+        padding: 17px 0px 17px 0px;
         color: #d4af37;
         transition: 0.3s;
         background-color: #131111;
@@ -172,7 +173,6 @@ header {
 .article11 {
     padding: 25px;
     text-align: justify;
-    margin-top: 20%;
     color: white;
     font-weight: bolder;
     background-color: rgba(0,0,0,0.1);
@@ -183,7 +183,6 @@ header {
     }
 
 .naslov {
-    text-decoration: underline;
     text-align: center;
     color: white;
     padding: 20px;
@@ -711,9 +710,29 @@ svg text {
     align-items: center;
     padding: 30px;
     width: auto;
-    background-color: #E2DED0;
+    background-size: cover;
+    color: white;
 }
 
+#kartica1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/karticabg1.jpg);
+    background-size: cover;
+}
+
+#kartica2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/karticabg2.jpg);
+    background-size: cover;
+}
+
+#kartica3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/karticabg2.jpg);
+    background-size: cover;
+}
+
+#kartica4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/karticabg4.jpg);
+    background-size: cover;
+}
 
 .kartica:hover {
     background-color: #131111;
@@ -721,7 +740,6 @@ svg text {
 	transform: scaleY(1);
 	transition: .2s ease-in-out;
     box-shadow: none;
-    border: 2px solid #d4af37;
     color: #d4af37;
 }
 

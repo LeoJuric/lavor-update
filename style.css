@@ -76,7 +76,6 @@ header {
 }
 
     #gore li {
-        border: 1px solid #d4af37;
         padding: 10px;
     }
 
@@ -89,7 +88,7 @@ header {
 #completlogo {
     display: flex;
     flex-direction: column;
-    margin-left: -270px;
+    justify-content: flex-start;
 }
 
     #completlogo img {
@@ -114,14 +113,13 @@ header {
 
 #goreshow {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
     #lievi {
         display: flex;
-        justify-content: flex-end;
-        margin-right: -230px;
+        justify-content: baseline;
     }
 
     #goreshow li {
@@ -175,7 +173,6 @@ header {
     text-align: justify;
     color: white;
     font-weight: bolder;
-    background-color: rgba(0,0,0,0.1);
 }
 
     .article11 p, .article11 h1 {
@@ -272,24 +269,6 @@ header {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(images/posebni.avif);
                     }
 
-                    .straznja {
-                        display: none;
-                    }
-
-                    .prednja {
-                        position: absolute;
-                    }
-
-                    .pro-kar.active .straznja {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                    }
-
-                    .pro-kar.active .prednja {
-                        display: none;
-                    }
-
                     .pro-kar {
                         display: flex;
                         justify-content: center;
@@ -316,28 +295,7 @@ header {
     padding: 25px;
     text-align: justify;
     color: white;
-}
-
-    .article12 li {
-        padding: 10px;
-        border-bottom: 1px solid white;
-    }
-
-    #li2 {
-        margin-left: 20%;
-    }
-
-    #li3 {
-        margin-left: 40%;
-    }
-
-    #li4 {
-        margin-left: 60%;
-    }
-
-    #li5 {
-        margin-left: 80%;
-    }  
+}  
 
 #animacija {
     display: flex;
@@ -371,16 +329,15 @@ header {
 }
 
     #btn a {
-        border: 1px solid white;
         padding: 20px;
         text-decoration: none;
         color: white;
+        background-color: #131111;
     }
 
         #btn a:hover {
             color: #d4af37;
             transition: 0.3s;
-            border: 1px solid #d4af37;
             padding: 26px;
             background-color: #131111;
         }
@@ -457,7 +414,7 @@ header {
         background-color: none;
         padding: 10px;
         font-size: 70px;
-        color: #665315;
+        color: #d4af37;
     }
 
         #social1:hover {
@@ -469,7 +426,7 @@ header {
         background-color: none;
         padding: 10px;
         font-size: 70px;
-        color: #665315;
+        color: #d4af37;
     }
 
         #social2:hover {
@@ -482,7 +439,7 @@ header {
     }
 
     .bxxx {
-        color: #FED766;
+        color: #d4af37;
         padding: 10px;
         font-size: 35px;
     }
@@ -788,7 +745,7 @@ svg text {
  
 ::-webkit-scrollbar-thumb
  {
-     background-color: #F90;	
+     background-color: #131111;	
      background-image: -webkit-linear-gradient(45deg,
                                                rgba(255, 255, 255, .2) 25%,
                                                transparent 25%,

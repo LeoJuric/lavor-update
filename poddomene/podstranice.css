@@ -10,6 +10,10 @@
     font-weight: bolder; 
 }
 
+body {
+    background: linear-gradient(#131313, #272727);
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -33,7 +37,7 @@ img {
     justify-content: space-evenly;
     text-align: center;
     padding: 80px 0px 50px 0px;
-    background: linear-gradient(#272727 5%, white 90%);
+    background: linear-gradient(#272727 5%, #EAD79A 90%);
 }
 
 .savokontaktdiv {
@@ -43,11 +47,14 @@ img {
 #radnovrijeme {
     margin-top: 2%;
     color: black;
+    padding: 0 20px;
 }
 
 #logobot img {
     object-fit: cover;
     width: 100%;
+    padding-left: 40px;
+    padding-top: 30px;
 }
 
 #social {
@@ -58,6 +65,18 @@ img {
 #socials2 {
     padding-bottom: 10px;
 }
+
+    #socials2 h4 {
+        margin-top: 15px;
+    }
+
+#socials1 {
+    padding-right: 12px;
+}
+
+    #socials1 h4 {
+        margin-top: 5px;
+    }
 
     #socials1, #socials2 {
         font-size: 20px;
@@ -72,9 +91,10 @@ img {
     }
 
     #social1 {
-        background-color: #00f2ea;
+        background-color: none;
         padding: 10px;
         font-size: 70px;
+        color: #d4af37;
     }
 
         #social1:hover {
@@ -83,9 +103,10 @@ img {
         }
 
     #social2 {
-        background-color: #E1306C;
+        background-color: none;
         padding: 10px;
         font-size: 70px;
+        color: #d4af37;
     }
 
         #social2:hover {
@@ -98,9 +119,13 @@ img {
     }
 
     .bxxx {
-        color: #FED766;
+        color: #d4af37;
         padding: 10px;
         font-size: 35px;
+    }
+
+    #socials1 h4 {
+        padding-top: 10px;
     }
 
 #whitelogo {
@@ -125,10 +150,13 @@ header a {
     font-size: 25px;
 }
 
-#headerpodstranice {
+#treci img {
+    cursor: pointer;
+}
+
+#headerpodstranicegal {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(darkslategray, #2f2f2f);
 }
 
 #naslovpodstranice {
@@ -183,10 +211,6 @@ header a {
 	grid-row: span 2;
 }
 
-img {
-    cursor: pointer;
-}
-
 /* galerija lighbox */
 
 #lightbox {
@@ -223,6 +247,15 @@ img {
 
 /* info */
 
+#headerpodstranice {
+    display: flex;
+    flex-direction: column;
+}
+
+#headerpodstranice a {
+    margin: auto;
+}
+
 #savinfo {
     background-color: #272727;
 }
@@ -250,39 +283,145 @@ img {
     padding-top: 10px;
 }
 
-#socials2 h4 {
-    padding-top: 10px;
+#infologo {
+    width: 500px;
+    margin: auto;
+}
+
+#infologo1 {
+    width: 500px;
+    margin: auto;
+}
+
+#informacije {
+    color: white;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    margin: 0 140px;
+}
+
+#informacije h1,h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#polja {
+    margin: 50px 100px 0px 100px;
+    color: gray;
+}
+
+#forma {
+    margin: 0 140px;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+form {
+    width: 100%;
+}
+
+#forma div {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px 20px;
+}
+
+#forma label {
+    width: 150px;
+    padding-top: 12px;
+}
+
+#forma textarea {
+    padding: 12px 20px;
+}
+
+#id50 {
+    width: 400px;
+} 
+
+#id40 {
+    width: 800px;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    background-color: #131313;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+#maps h1 {
+    margin: 0 140px;
+    color: white;
+    padding: 10px 0;
+}
+
+
+#maps p {
+    margin: 0 140px;
+    color: white;
+    padding: 10px 0;
 }
 
 
 
 
 
-
-
-
-@media(max-width: 760px) {
+@media(max-width: 1034px) {
     #savinfo p, li {
         padding: 20px 50px;
     }
 
+    #forma div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    #id50 {
+        width: 800px;
+    } 
+
     #savkontakt {
         display: flex;
         flex-direction: column;
-        background: linear-gradient(#272727, white);
+        background: linear-gradient(#272727 5%, #EAD79A 90%);
     }
 
     .savokontaktdiv {
         width: 100%;
+        padding-bottom: 50px;
     }
 
-    #whitelogo {
-        margin-top: 10px;
+    #radnovrijeme {
+        padding-bottom: 50px;
     }
 
-    #social {
-        margin: auto;
-    }
+#social {
+    margin: auto;
+}
+
+#logobot {
+    width: 90%;
+    margin: auto;
+    padding-right: 20px;
+}
 }
 
 
@@ -302,7 +441,7 @@ img {
  
 ::-webkit-scrollbar-thumb
  {
-     background-color: #F90;	
+     background-color: #131313;	
      background-image: -webkit-linear-gradient(45deg,
                                                rgba(255, 255, 255, .2) 25%,
                                                transparent 25%,
